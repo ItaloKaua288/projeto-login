@@ -29,12 +29,13 @@ section#login {
     transform: translate(-50%, -50%);
     border-radius: 20px;
     background-color: white;
-    width: 250px;
-    height: 400px;
     overflow: hidden;
 }
 h1, p {
     text-shadow: 1px 1px 8px rgb(0 0 0 / 28%);
+}
+div#imagem {
+    background: #9E12EB url(../imagens/hazelwood.jpg) no-repeat bottom center;
 }
 div#formulario > form {
     color: white;
@@ -66,36 +67,103 @@ input#iesqueci {
     border: 1px solid #1c729b;
     color: #1c729b;
 }
+.opcoes {
+    border: none;
+    border-radius: 5px;
+}
 
 @media screen and (max-width: 600px) {
+    section#login {
+        width: 250px;
+        height: 400px;
+    }
     div#imagem {
         height: 200px;
-        background: #9E12EB url(../imagens/hazelwood.jpg) no-repeat center center;
-        background-size: cover;
     }
     div#formulario > form {
         width: 240px;
         margin: 5px;
-        color: white;
-        position: relative;
     }
-    input#iusu {
+    #iusu {
         top: 1px;
     }
-    input#isen {
+    #isen {
         top: 29px;
     }
-    input.opcoes {
+    .opcoes {
         width: 240px;
         margin: 1px 0px 1px 0px;
         padding: 2px;
-        border-radius: 5px;
-        border: none;
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
-    html, body {
-        background-color: black;
+@media screen and (min-width: 600px) and (orientation: portrait) {
+    section#login {
+        width: 600px;
+        height: 210px;
+    }
+    div#imagem {
+        width: 200px;
+        height: 300px;
+        display: inline-block;
+    }
+    div#formulario {
+        width: 400px;
+        height: 200px;
+        padding: 5px;
+        display: inline-block;
+        position: absolute;
+    }
+    form > p {
+        scale: 120%;
+        margin-left: 40px;
+        margin-bottom: 2px;
+    }
+    #iusu, #isen {
+        width: 285px;
+        top: 1px;
+    }
+    .opcoes {
+        margin-top: 2px;
+        width: 310px;
+        height: 23px;
+    }
+}
+
+@media screen and (min-width: 600px) and (orientation: landscape) {
+    section#login {
+        width: 80vw;
+        max-width: 778px;
+        height: 210px;
+        display: flex;
+        flex-direction: row;
+    }
+    div#imagem {
+        width: 30vw;
+        height: 300px;
+        display: inline-block;
+        order: 2;
+    }
+    div#formulario {
+        display: block;
+        max-width: 500px;
+        min-width: 325px;
+        height: 100px;
+        order: 1;
+        padding: 10px;
+    }
+    form > p {
+        scale: 110%;
+        margin-left: 24px;
+    }
+    #iusu, #isen {
+        width: 84%;
+        max-width: 355px;
+        min-width: 287px;
+    }
+    .opcoes {
+        width: 90%;
+        max-width: 380px;
+        min-width: 314px;
     }
 }
