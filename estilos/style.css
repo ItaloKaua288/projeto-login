@@ -33,30 +33,23 @@ section#login {
     height: 400px;
     overflow: hidden;
 }
-div#imagem {
-    height: 200px;
-    background: #9E12EB url(../imagens/hazelwood.jpg) no-repeat center center;
-    background-size: cover;
-}
 h1, p {
     text-shadow: 1px 1px 8px rgb(0 0 0 / 28%);
+}
+div#formulario > form {
+    color: white;
+    position: relative;
 }
 div#formulario > h1 {
     text-align: center;
 }
-div#formulario > p {
-    padding: 5px;
-    text-indent: 3px;
-}
-div#formulario > form {
-    width: 240px;
-    margin: 5px;
-    color: white;
-    position: relative;
-}
 div#formulario > form > p > label > span {
     background-color: #5406D4;
     border-radius: 5px;
+}
+div#formulario > p {
+    padding: 5px;
+    text-indent: 3px;
 }
 .usu-sen {
     position: absolute;
@@ -65,19 +58,6 @@ div#formulario > form > p > label > span {
     border: 2px solid #5406D4;
     border-radius: 3px;
 }
-input#iusu {
-    top: 1px;
-}
-input#isen {
-    top: 29px;
-}
-input.opcoes {
-    width: 240px;
-    margin: 1px 0px 1px 0px;
-    padding: 2px;
-    border-radius: 5px;
-    border: none;
-}
 input#ientrar {
     background-color: #14526e;
     color: white;
@@ -85,4 +65,37 @@ input#ientrar {
 input#iesqueci {
     border: 1px solid #1c729b;
     color: #1c729b;
+}
+
+@media screen and (max-width: 600px) {
+    div#imagem {
+        height: 200px;
+        background: #9E12EB url(../imagens/hazelwood.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    div#formulario > form {
+        width: 240px;
+        margin: 5px;
+        color: white;
+        position: relative;
+    }
+    input#iusu {
+        top: 1px;
+    }
+    input#isen {
+        top: 29px;
+    }
+    input.opcoes {
+        width: 240px;
+        margin: 1px 0px 1px 0px;
+        padding: 2px;
+        border-radius: 5px;
+        border: none;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    html, body {
+        background-color: black;
+    }
 }
