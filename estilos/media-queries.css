@@ -26,7 +26,7 @@ cor04 = #4F07F7
         top: 29px;
     }
     .opcoes {
-        width: 240px;
+        width: 100%;
         margin: 1px 0px 1px 0px;
         padding: 2px;
     }
@@ -58,12 +58,13 @@ cor04 = #4F07F7
         margin-bottom: 2px;
     }
     #iusu, #isen {
-        width: 285px;
+        width: 83%;
         top: 1px;
+        transition: width 0s, height 0s;
     }
     .opcoes {
         margin-top: 2px;
-        width: 310px;
+        width: 90%;
         height: 23px;
     }
 }
