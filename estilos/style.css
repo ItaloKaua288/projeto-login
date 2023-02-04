@@ -67,9 +67,16 @@ input#ientrar {
     background-color: #14526e;
     color: white;
 }
+input#ientrar:hover {
+    background-color: #2386b4;
+}
 input#iesqueci {
     border: 1px solid #1c729b;
     color: #1c729b;
+}
+input#iesqueci:hover {
+    background-color: #2386b4;
+    color: white;
 }
 .opcoes {
     border: none;
